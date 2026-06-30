@@ -2,7 +2,7 @@ import numpy as np
 from sklearn.linear_model import LinearRegression
 from sklearn.cluster import KMeans
 
-class BudgetService:
+class BudgetService:#linear regression
     def predict(self, history_list: list[float], new_expense: float, total_budget: float, trip_duration: int) -> dict:
         days_passed = len(history_list)
         total_spent = sum(history_list)
